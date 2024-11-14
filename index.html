@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganttify</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="icon" href="./public/images/Shape.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main" class="h-full w-full max-[480px]:w-[480px] max-[480px]:overflow-hidden">
+    <!-- nav -->
+    <nav class="w-full px-8 py-5 bg-white">
+      <div class="flex items-center justify-between">
+        <div class="flex gap-10 items-center justify-center">
+          <div class="flex gap-2 items-center justify-center">
+            <img src="./public/images/Shape.png" alt="">
+            <h1 class="font-semibold text-lg">Ganttify</h1>
+          </div>
+          <div class="flex gap-6 items-center justify-center text-sm max-[480px]:hidden">
+            <a href="">Product</a>
+            <a href="">Solutions</a>
+            <a href="">Resources</a>
+            <a href="">Company</a>
+            <a href="">Pricing</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-4 max-[480px]:hidden">
+          <button class="bg-grad sign-in text-sm py-2 px-4 font-semibold">Sign In</button>
+          <button class="bg-grad get-started-1 text-sm py-2 px-4 font-semibold text-white">Get Started</button>
+        </div>
+        <i class="ri-menu-line hidden font-semibold max-[480px]:block text-black"></i>
+      </div>
+    </nav>
+
+    <!-- hero-section -->
+    <div class="max-[480px]:p-4 max-[480px]:overflow-hidden">
+      <div
+        class="w-full bg-[url('./public/images/hero-bg-image.png')] bg-center bg-cover bg-no-repeat bg-black text-white p-20 max-[480px]:rounded-3xl max-[480px]:p-6">
+        <div class="flex items-start justify-between max-[480px]:block">
+          <!-- hero-left-part -->
+          <div class="w-max">
+            <div class="flex flex-col items-start gap-7 max-[480px]:text-wrap">
+              <div
+                class="w-max py-1 px-2 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] border border-gray-500/30 rounded-md">
+                <i class="ri-crosshair-line text-base"></i>
+                <h4>Goals & Reporting</h4>
+              </div>
+              <div class="text-7xl font-medium max-[480px]:text-6xl max-[480px]:w-[400px] ">Goals
+                and Reporting In One
+                Place
+              </div>
+              <div class="text-sm text-white/50 max-[480px]:w-[400px] max-[480px]:text-xl">Connect every team’s work to
+                company objectives,
+                then track
+                progress
+                with
+                real-time data</div>
+              <div
+                class="flex items-center gap-4 max-[480px]:w-[400px] max-[480px]:flex-col max-[480px]:justify-center">
+                <button class="bg-grad get-started-2 text-sm py-2 px-5 text-black font-semibold max-[480px]:w-full">Get
+                  Started</button>
+                <button
+                  class="bg-grad how-it-works text-sm py-2 px-5 text-white font-semibold border border-gray-500/30  max-[480px]:w-full">How
+                  it
+                  Works</button>
+              </div>
+            </div>
+            <div class="mt-20">
+              <div class="mb-4 text-sm text-white/50">Trusted by 2 million+ teams</div>
+              <div class="w-max flex items-center justify-center gap-12">
+                <img class="h-8" src="./public/images/mailchimp.png" alt="">
+                <img class="h-8" src="./public/images/medium.png" alt="">
+                <img class="h-8" src="./public/images/microsoft.png" alt="">
+                <img class="h-8 max-[480px]:hidden" src="./public/images/upwork.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- hero-right-part -->
+          <div class="flex items-center flex-col justify-center gap-8 max-[480px]:gap-2 max-[480px]:mt-8">
+            <div class="flex items-end gap-8 relative max-[480px]:gap-2">
+              <!-- card-1 -->
+              <div
+                class="w-max hero-right-icons absolute top-0 right-2/3 rotate-12 icon-grad mb-2 rounded-md p-1 bg-white/15 max-[480px]:right-[65%]">
+                <img class="h-7 -rotate-6" src="./public/images/timer-pause.png" alt="">
+              </div>
+              <div class="relative">
+                <div
+                  class="flex w-44 items-center flex-col gap-[10px] bg-white/90 p-[10px] rounded-xl max-[480px]:w-36 max-[480px]:p-[8px]">
+                  <div class="w-full p-2 bg-white text-black rounded-lg shadow-sm">
+                    <div
+                      class="bg-neumorphism w-max px-[2px] py-[3px] text-xs bg-purple-600 text-white rounded-md mb-2">
+                      <i class="ri-eye-fill text-[10px] border border-white/30 p-1 rounded"></i>
+                    </div>
+                    <h2 class="font-semibold text-sm">5,089</h2>
+                    <div class="flex items-center justify-between text-[10px] text-gray-500">
+                      <h4>Viewers</h4>
+                      <h4 class="bg-gray-500/10 p-1 rounded-xl">+12.3%</h4>
+                    </div>
+                  </div>
+                  <div class="w-full p-2 bg-white text-black rounded-lg shadow-sm">
+                    <div
+                      class="bg-neumorphism w-max px-[2px] py-[3px] text-xs bg-purple-600 text-white rounded-md mb-2">
+                      <i class="ri-bar-chart-fill text-[10px] border border-white/30 p-1 rounded"></i>
+                    </div>
+                    <h2 class="font-semibold text-sm">89.90%</h2>
+                    <div class="flex items-center justify-between text-[10px] text-gray-500">
+                      <h4>Conversions</h4>
+                      <h4 class="bg-gray-500/10 p-1 rounded-xl">+101%</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div class="w-60">
+                <div class="bg-white text-black px-5 py-6 rounded-xl max-[480px]:px-3 max-[480px]:py-4">
+                  <h4 class="text-black/50 font-semibold text-xs mb-1">Spending per month</h4>
+                  <h1 class="mb-4 font-semibold">$4,567</h1>
+                  <div class="relative">
+                    <div class="vector vector-1 relative flex items-center justify-center flex-col gap-10">
+                      <div class="h-[1px] w-full bg-black/10"></div>
+                      <div class="h-[1px] w-full bg-black/10"></div>
+                      <div class="h-[1px] w-full bg-black/10"></div>
+                      <img class="absolute" src="./public/images/Vector 1.png" alt="">
+                      <img class="absolute top-5" src="./public/images/Vector 3.png" alt="">
+                      <div class="absolute top-[6px] flex items-center justify-center flex-col gap-1">
+                        <h3 class="text-[8px] text-white bg-black px-2 py-1 rounded-full"><span
+                            class="text-white/30">This
+                            month &nbsp;</span>
+                          7692</h3>
+                        <div class="h-2 w-2 rounded-full border-2 border-blue-500 bg-white"></div>
+                      </div>
+                    </div>
+                    <div class="vector vector-2 relative flex items-center justify-center flex-col gap-10">
+                      <div class="w-full bg-black/10"></div>
+                      <div class="h-[1px] w-full bg-black/10"></div>
+                      <div class="h-[1px] w-full bg-black/10"></div>
+                      <img class="absolute" src="./public/images/Vector 2.png" alt="">
+                      <img class="absolute bottom-5" src="./public/images/Vector 4.png" alt="">
+                      <div class="absolute right-3 flex items-center justify-center flex-col gap-1">
+                        <h3 class="text-[8px] text-white bg-black px-2 py-1 rounded-full"><span
+                            class="text-white/30">This
+                            month &nbsp;</span>
+                          7692</h3>
+                        <div class="h-2 w-2 rounded-full border-2 border-purple-500 bg-white"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="w-72 bg-white p-3 rounded-xl text-black relative">
+              <div
+                class="w-max hero-right-icons absolute top-0 -left-1/3 -rotate-12 icon-grad mb-2 rounded-md p-1 bg-white/15 max-[480px]:-left-[20%]">
+                <img class="h-7 rotate-6" src="./public/images/firstline.png" alt="">
+              </div>
+              <div class="flex items-start flex-col gap-2">
+                <div class="flex items-center gap-1">
+                  <div class="h-2 w-2 bg-red-500 rounded-full"></div>
+                  <div class="h-2 w-2 bg-yellow-500 rounded-full"></div>
+                  <div class="h-2 w-2 bg-green-500 rounded-full"></div>
+                </div>
+                <div
+                  class="w-full flex items-center justify-between px-2 py-3 bg-gray-500/15 rounded-md text-xs font-semibold">
+                  <h2 class="">🚀 Users newly onboarded</h2>
+                  <h3 class="text-black/70">2 days ago</h3>
+                </div>
+                <div
+                  class="w-full flex items-center justify-between px-2 py-3 bg-gray-500/15 rounded-md text-xs font-semibold">
+                  <h2 class="">💰 Made an purchase</h2>
+                  <h3 class="text-black/70">5 days ago</h3>
+                </div>
+              </div>
+              <div
+                class="w-max hero-right-icons absolute bottom-0 -right-1/3 rotate-12 icon-grad mb-2 rounded-md p-1 bg-white/15 max-[480px]:-right-[20%]">
+                <img class="h-7 -rotate-6" src="./public/images/calendar.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info -->
+    <div class="w-full bg-white text-black py-20 max-[480px]:p-10">
+      <div class="w-full">
+        <div class="w-full flex flex-col items-center justify-center gap-6 px-20 pb-10">
+          <div class="text-[#818898]">Trusted by 2 million+ teams</div>
+          <div
+            class="w-full flex items-center justify-between max-[480px]:w-[400px] max-[480px]:justify-center max-[480px]:flex-wrap max-[480px]:gap-6">
+            <img class="max-[480px]:h-8" src="./public/images/medium-black.png" alt="">
+            <img class="max-[480px]:h-8" src="./public/images/mailchimp-black.png" alt="">
+            <img class="max-[480px]:h-8" src="./public/images/evernote.png" alt="">
+            <img class="max-[480px]:h-8" src="./public/images/dropbox.png" alt="">
+            <img class="max-[480px]:h-8" src="./public/images/microsoft-black.png" alt="">
+          </div>
+        </div>
+        <div class="h-6 w-full shadow absolute max-[480px]:relative"></div>
+        <div class="p-20 mt-10 max-[480px]:p-0">
+          <div
+            class="w-max py-1 px-2 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] bg-white border border-gray-500/30 rounded-md">
+            <i class="ri-codepen-line text-base"></i>
+            <h4>Features</h4>
+          </div>
+          <h1 class="text-5xl mt-4 font-semibold ">Everything Your Team Looking For</h1>
+          <h4 class="text-black/80 mt-4 text-sm">Ganttify’s exceptional flexibility can handle any type of work. And we
+            never
+            stop
+            innovating</h4>
+
+          <!-- info-boxes -->
+          <div class="flex flex-col gap-40 mt-20 max-[480px]:mt-16">
+
+            <!-- box-1 & box-2 -->
+            <div class="flex items-center justify-between max-[480px]:flex-col max-[480px]:gap-40">
+
+              <!-- box-1 -->
+              <div class="w-[44%] h-72 max-[480px]:w-full">
+                <div class="w-full h-full bg-grad box-grad relative overflow-hidden">
+                  <div class="absolute box-1 w-60 h-32 bg-[#5c49e99f] rounded-xl blur-3xl -z-10"></div>
+                  <img class="absolute top-4" src="./public/images/box-1-image.png" alt="">
+                </div>
+                <div class="mt-6">
+                  <h2 class="font-semibold mb-2">Project Management</h2>
+                  <p class="text-black/70">Manage your projects from start to finish. With all of your projects in
+                    Ganttify,
+                    you’ll
+                    always
+                    know who’s doing what, by when
+                  </p>
+                </div>
+              </div>
+
+              <!-- box-2 -->
+              <div class="w-[44%] h-72 max-[480px]:w-full">
+                <div class="w-full h-full bg-grad box-grad relative overflow-hidden">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 box-1 w-60 h-32 bg-[#01b4dc40] rounded-xl blur-3xl -z-10">
+                  </div>
+                  <div class="w-full h-full z-10 flex items-center justify-center">
+                    <div class="flex items-center justify-center gap-[2px]">
+                      <div class="relative flex items-center justify-center">
+                        <img class="max-[480px]:h-[130px]" src="./public/images/box-2-Vector 1.png" alt="">
+                        <img class="absolute -left-1/4 -translate-x-[2px]" src="./public/images/box-2-zap.png" alt="">
+                      </div>
+                      <div class="w-full h-full flex flex-col items-start justify-center gap-7 max-[480px]:gap-2">
+                        <div class="rounded-xl bg-white px-2 py-3 flex">
+                          <div>
+                            <h2 class="text-sm font-semibold mb-2">Competitive Targeting</h2>
+                            <div class="flex items-center gap-6 text-xs">
+                              <div class="text-black/50 flex flex-col gap-1">
+                                <h4>Assignee</h4>
+                                <h4>Due date</h4>
+                                <h4>Projects</h4>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <div
+                                  class="w-max py-1 px-1 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] bg-white border border-gray-500/30 rounded-md">
+                                  <img src="./public/images/leslie.png" alt="">
+                                  <h4>Leslie Alexander</h4>
+                                </div>
+                                <h4>June 22, 2024</h4>
+                                <h4>Uxertiv Dashboard </h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-28 h-1 max-[480px]:w-8"></div>
+                        </div>
+                        <div class="w-max flex items-center gap-4 bg-white px-2 py-3 rounded-xl max-[480px]:gap-2">
+                          <img class="max-[480px]:h-6" src="./public/images/zapier.png" alt="">
+                          <h4 class="text-sm text-black/50 max-[480px]:text-xs">Your task</h4>
+                          <div
+                            class="w-max py-1 px-2 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] bg-[#e1fff4] border-none rounded-md">
+                            <i class="ri-checkbox-circle-fill text-green-500"></i>
+                            <h4 class="font-semibold max-[480px]:text-[10px]">Competitive Targeting</h4>
+                          </div>
+                          <h4 class="text-sm text-black/50">update!!</h4>
+                          <div class="w-10 h-1 max-[480px]:w-3"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <h2 class="font-semibold mb-2">Workflows and Automations</h2>
+                  <p class="text-black/70">Create more efficient processes so you can seamlessly manage projects
+                    across
+                    departments and get more done in less time
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- box-3 & box-4 -->
+            <div class="flex items-center justify-between max-[480px]:flex-col max-[480px]:gap-40">
+
+              <!-- box-3 -->
+              <div class="w-[44%] h-72 max-[480px]:w-full ">
+                <div class="w-full h-full bg-grad box-grad relative overflow-hidden">
+                  <div class="absolute bottom-0 right-0 box-1 w-60 h-32 -z-10 bg-[#01b4dc40] rounded-xl blur-3xl"></div>
+                  <div class="w-full h-full flex items-center justify-center">
+                    <div class="w-3/4 flex flex-col text-black bg-white p-6 rounded-xl max-[480px]:px-10">
+                      <div class="w-full flex items-center justify-between">
+                        <h4 class="flex items-center text-sm text-black/60">Spending per month &nbsp;
+                          <span
+                            class="flex items-center justify-center h-3 w-3 rounded-full border border-black/40 text-[8px] text-black/60 ">!</span>
+                        </h4>
+                        <div class="h-5 w-5 flex items-center justify-center text-black/70 border text-xs rounded">
+                          <i class="ri-share-box-line"></i>
+                        </div>
+                      </div>
+                      <h1 class="mt-2">$6,248.00</h1>
+                      <div class="flex items-center gap-2">
+                        <span class="bg-[#01b4dc40] px-1 py-1 text-xs rounded text-green-500">+2.15%</span>
+                        <h4 class="text-xs text-black/50">from last month</h4>
+                      </div>
+                      <div class="w-full mt-4 flex items-center justify-center gap-6">
+                        <div class="flex flex-col gap-4 text-black/50 text-xs">
+                          <h3>$6000</h3>
+                          <h3>$5000</h3>
+                          <h3>$4000</h3>
+                          <h3>&nbsp;</h3>
+                        </div>
+                        <div class="w-full relative flex flex-col gap-4 text-xs text-black/40">
+                          <div class="flex flex-col gap-4 overflow-hidden">
+                            <div class="w-full whitespace-nowrap">
+                              -------------------------------------------------------------
+                            </div>
+                            <div class="w-full whitespace-nowrap">
+                              -------------------------------------------------------------
+                            </div>
+                            <div class="w-full whitespace-nowrap">
+                              -------------------------------------------------------------
+                            </div>
+                          </div>
+                          <div class="flex items-center justify-between">
+                            <h3 class="text-black/60">Jul 15</h3>
+                            <h3 class="text-black">Sep 15</h3>
+                            <h3 class="text-black/60">Nov 15</h3>
+                          </div>
+                          <div
+                            class="w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[100%] absolute flex items-center justify-center">
+                            <img class="" src="./public/images/box-3-Vector 1.png" alt="">
+                          </div>
+                          <div class="w-full -top-2 z-10 absolute flex flex-col items-center justify-center gap-1">
+                            <div class="w-max bg-white rounded-md p-2 border">
+                              <h2 class="text-black text-sm">$3,456.00</h2>
+                              <div class="flex items-center gap-5 text-[10px]">
+                                <h4>Sep 15, 2023</h4>
+                                <div class="text-green-500 flex items-center ">
+                                  <i class="ri-arrow-up-line"></i>
+                                  <h4>0.25%</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                              <div class="h-1 w-1 bg-black rounded-full"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <h2 class="font-semibold mb-2">Goals and Reporting</h2>
+                  <p class="text-black/70">See how each project and portfolio ladders up to company objectives and
+                    keep
+                    everyone focused on the work that matters
+                  </p>
+                </div>
+              </div>
+
+              <!-- box-4 -->
+              <div class="w-[44%] h-72 max-[480px]:w-full max-[480px]:mb-40">
+                <div class="w-full h-full bg-grad box-grad relative overflow-hidden">
+                  <div class="absolute bottom-0 right-8 box-1 w-60 h-32 -z-10 bg-[#5b48e950] rounded-xl blur-3xl"></div>
+                  <div class="w-full h-full flex items-end justify-center">
+                    <img src="./public/images/box-4-image.png" alt="">
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <h2 class="font-semibold mb-2">Resource Management</h2>
+                  <p class="text-black/70">Get the visibility you need to plan accurate timelines, adjust workloads, and
+
+                    stay on track to achieve your objectives
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pricing -->
+    <div class="max-[480px]:p-4">
+      <div
+        class="w-full bg-[url('./public/images/pricing-bg-image.png')] bg-center bg-cover bg-no-repeat bg-black p-20 max-[480px]:p-8 max-[480px]:rounded-3xl">
+        <div class="w-full">
+          <div
+            class="w-max py-1 px-2 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] border border-gray-500/30 rounded-md">
+            <i class="ri-bank-card-2-line text-base text-white"></i>
+            <h4 class="text-white">Pricing</h4>
+          </div>
+          <div class="text-white flex items-end justify-between mt-4 max-[480px]:justify-center max-[480px]:flex-col">
+            <h1 class="text-5xl">Simple and Flexible Pricing</h1>
+            <div
+              class="w-max bg-grad bg-[#2b2b2d] p-[2px] rounded-md text-xs pr-6 flex items-center justify-center gap-6 border max-[480px]:w-full max-[480px]:justify-between max-[480px]:mt-10">
+              <h4 class="bg-grad bg-white rounded-md px-6 text-xs py-2 text-black max-[480px]:px-16">
+                <button>Monthly</button>
+              </h4>
+              <button class="max-[480px]:mr-10">Annually</button>
+            </div>
+          </div>
+          <div class="w-full flex items-center justify-center mt-16">
+            <div class="w-full flex items-center justify-center gap-12 max-[480px]:flex-col">
+              <div
+                class="w-1/3 rounded-xl border border-white/5 bg-price-grad-1 bg-[#2b2b2d] text-white/50 p-4 max-[480px]:w-[400px]">
+                <h4 class="mb-2">Personal</h4>
+                <h1 class="text-xs w-max"><span class="text-white text-2xl">$29</span>&nbsp; per month</h1>
+                <p class="text-xs mt-1">For individuals and small teams looking to <br> manage their tasks</p>
+                <hr class="border-t border-dashed border-white/10 my-6">
+                <div class="flex flex-col gap-3">
+                  <div>This Plan Includes:</div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Unlimited contacts</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Bulk emailing</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">AI Integration</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">View & share up to 3 years</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Collaboraion & permissions</h4>
+                  </div>
+                </div>
+                <button
+                  class="w-full bg-grad text-sm py-2 px-5 text-white bg-[#373738] border border-white/5 font-semibold mt-5">Get
+                  Started</button>
+              </div>
+              <div class="w-1/3 bg-grad bg-white text-black/80 p-4 max-[480px]:w-[400px]">
+                <h4 class="mb-2">Pro</h4>
+                <h1 class="text-xs w-max"><span class="text-black text-2xl">$39</span>&nbsp; per month</h1>
+                <p class="text-xs mt-1">For growing teams that need to track their <br> projects' progress and hit
+                  deadlines
+                </p>
+                <hr class="border-t border-dashed border-black/40 my-6">
+                <div class="flex flex-col gap-3">
+                  <div class="text-black font-semibold">Everything in Standard, plus:</div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-black">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-black/80 text-sm">Email sequences</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-black">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-black/80 text-sm">Send emails from multiple domains</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-black">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-black/80 text-sm">Connect multiple email accounts</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-black">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-black/80 text-sm">Fully adjustable sharing permissions</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-black">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-black/80 text-sm">Migration services</h4>
+                  </div>
+                </div>
+                <button
+                  class="w-full bg-grad text-sm py-2 px-5 text-white bg-black border border-white/5 font-semibold mt-5">Get
+                  Started</button>
+              </div>
+              <div
+                class="w-1/3 rounded-xl border border-white/5 bg-price-grad-2 bg-[#2b2b2d] text-white/50 p-4 max-[480px]:w-[400px]">
+                <h4 class="mb-2">Beyond limits</h4>
+                <h1 class="text-2xl text-white w-max">Custom Plan</h1>
+                <p class="text-xs mt-1">For companies that need to manage a portfolio of <br> work and goals across
+                  departments</p>
+                <hr class="border-t border-dashed border-white/10 my-6">
+                <div class="flex flex-col gap-3">
+                  <div>Everything in Standard & Pro, plus:</div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">White glove onboarding</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Custom billing</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Dedicated slack channel</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Dedicated point of contact</h4>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-4 w-4 bg-black/30 rounded-full flex items-center justify-center text-[10px] text-white">
+                      <i class="ri-check-line mt-[1px]"></i>
+                    </div>
+                    <h4 class="text-white/50 text-sm">Unlimited reporting</h4>
+                  </div>
+                </div>
+                <button
+                  class="w-full bg-grad text-sm py-2 px-5 text-white bg-[#373738] border border-white/5 font-semibold mt-5">Get
+                  Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- customers -->
+    <div class="w-full bg-white text-black">
+      <div class="p-20">
+        <div class="flex items-center justify-center">
+          <div
+            class="w-max py-1 px-2 text-xs bg-grad flex items-center justify-center gap-[6px] border border-gray-500/30 rounded-md">
+            <i class="ri-user-3-line text-base"></i>
+            <h4>Customers</h4>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 mt-4">
+          <div class="text-center">
+            <h1 class="text-5xl font-semibold">See What Our Customers</h1>
+            <h1 class="text-5xl font-semibold">Are Saying</h1>
+          </div>
+          <h4 class="text-sm text-center">Here's what some of our customers say about our platform.</h4>
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-20 mt-20 max-[480px]:gap-10">
+          <div class="w-max bg-white p-4 border border-black/20 rounded-xl flex flex-col gap-2">
+            <div class="text-base flex items-center">
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <h3 class="text-black/60 text-sm ml-1">4.8</h3>
+            </div>
+            <p class="text-sm font-medium">“Ganttify has revolutionized the way we <br> manage our projects.
+              Connecting tasks and
+              <br> workflows to
+              our
+              overall company goals has <br> never been easier.”.
+            </p>
+            <div class="flex items-center gap-2 mt-4">
+              <div class="h-8 w-8 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="">
+              </div>
+              <div class="text-sm flex flex-col gap-[1px]">
+                <h2 class="font-semibold">Charolette Hanlin</h2>
+                <h4 class="text-xs text-black/80">Co-Founder, Heroes Digital</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-max bg-white p-4 border border-black/20 rounded-xl flex flex-col gap-2">
+            <div class="text-base flex items-center">
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <h3 class="text-black/60 text-sm ml-1">4.8</h3>
+            </div>
+            <p class="text-sm font-medium">“Using Ganttify has streamlined our project <br> management process. It’s
+              incredibly <br> effective in aligning our daily tasks with the <br> company's strategic goals.”.
+            </p>
+            <div class="flex items-center gap-2 mt-4">
+              <div class="h-8 w-8 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="">
+              </div>
+              <div class="text-sm flex flex-col gap-[1px]">
+                <h2 class="font-semibold">Eleanor Pena</h2>
+                <h4 class="text-xs text-black/80">Co-Founder, Heroes Digital</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-max bg-white p-4 border border-black/20 rounded-xl flex flex-col gap-2">
+            <div class="text-base flex items-center">
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <h3 class="text-black/60 text-sm ml-1">4.8</h3>
+            </div>
+            <p class="text-sm font-medium">“Ganttify has provided us with a unified <br> view of our projects. It
+              connects our <br> workflows directly to our business goals, <br> making it easier to track progress.”.
+            </p>
+            <div class="flex items-center gap-2 mt-4">
+              <div class="h-8 w-8 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww"
+                  alt="">
+              </div>
+              <div class="text-sm flex flex-col gap-[1px]">
+                <h2 class="font-semibold">Christin Watson</h2>
+                <h4 class="text-xs text-black/80">Co-Founder, Heroes Digital</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-max bg-white p-4 border border-black/20 rounded-xl flex flex-col gap-2">
+            <div class="text-base flex items-center">
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <h3 class="text-black/60 text-sm ml-1">4.8</h3>
+            </div>
+            <p class="text-sm font-medium">“Ganttify's ability to connect tasks with our <br> company’s goals has given
+              us a new level of <br> clarity and efficiency in our project <br> management efforts”.
+            </p>
+            <div class="flex items-center gap-2 mt-4">
+              <div class="h-8 w-8 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww"
+                  alt="">
+              </div>
+              <div class="text-sm flex flex-col gap-[1px]">
+                <h2 class="font-semibold">Guy Hawkins</h2>
+                <h4 class="text-xs text-black/80">Co-Founder, Heroes Digital</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-max bg-white p-4 border border-black/20 rounded-xl flex flex-col gap-2">
+            <div class="text-base flex items-center">
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <h3 class="text-black/60 text-sm ml-1">4.8</h3>
+            </div>
+            <p class="text-sm font-medium">“Using Ganttify, we’ve been able to ensure <br> that all our project
+              activities are aligned with <br> our overarching business objectives, <br> leading to better coordination
+              and success.”.
+            </p>
+            <div class="flex items-center gap-2 mt-4">
+              <div class="h-8 w-8 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww"
+                  alt="">
+              </div>
+              <div class="text-sm flex flex-col gap-[1px]">
+                <h2 class="font-semibold">Jane Cooper</h2>
+                <h4 class="text-xs text-black/80">Co-Founder, Heroes Digital</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-max bg-white p-4 border border-black/20 rounded-xl flex flex-col gap-2">
+            <div class="text-base flex items-center">
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <i class="ri-star-s-fill text-purple-800"></i>
+              <h3 class="text-black/60 text-sm ml-1">4.8</h3>
+            </div>
+            <p class="text-sm font-medium">“Ganttify has transformed our approach to <br> project management. It ensures
+              that every <br> task, no matter how small, is aligned with <br> our company's mission and goals.".
+            </p>
+            <div class="flex items-center gap-2 mt-4">
+              <div class="h-8 w-8 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover"
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="">
+              </div>
+              <div class="text-sm flex flex-col gap-[1px]">
+                <h2 class="font-semibold">Leslie Alexander</h2>
+                <h4 class="text-xs text-black/80">Co-Founder, Heroes Digital</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact-grad w-full relative text-white p-20">
+      <div class="flex justify-between">
+        <div class="flex flex-col items-start gap-6">
+          <div
+            class="w-max py-1 px-2 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] border border-gray-500/30 rounded-md">
+            <i class="ri-customer-service-line"></i>
+            <h4>Contact</h4>
+          </div>
+          <h1 class="text-4xl font-semibold">Get in Touch with Us</h1>
+          <p class="text-white/50 text-sm">Ganttify enables you to achieve clarity and significant results on a <br>
+            large scale
+            by linking tasks and
+            workflows to the overarching <br> objectives of the company</p>
+        </div>
+        <div class="w-1/2 bg-white text-black p-6 rounded-xl flex flex-col gap-4 max-[480px]:hidden">
+          <div class="text-sm flex items-center">
+            <div>
+              <h4 class="text-black/80 mb-1">First name</h4>
+              <div class="px-4 py-2 rounded-lg border border-black/30">John</div>
+            </div>
+            <div>
+              <h4 class="text-black/80 mb-1">Last name</h4>
+              <div class="px-4 py-2 rounded-lg border border-black/30">Doe</div>
+            </div>
+          </div>
+          <div class="text-sm">
+            <h4 class="text-black/80 mb-1">Email</h4>
+            <div class="px-4 py-2 rounded-lg border border-black/30">Johndoe@mail.co|</div>
+          </div>
+          <div class="text-sm">
+            <h4 class="text-black/80 mb-1">Problem Descriptions</h4>
+            <div class="px-4 py-2 h-60 rounded-lg border border-black/30 text-black/50">Message</div>
+          </div>
+          <button class="w-full bg-grad text-sm py-2 px-5 text-white bg-black font-semibold">Send
+            Message</button>
+        </div>
+      </div>
+      <div class="overlay absolute h-3/5 w-full left-[38%] top-[60%] -translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+
+    <!-- footer-section -->
+    <div class="w-full bg-black text-white p-20 max-[480px]:p-8">
+      <div class="w-full flex flex-col items-start gap-16">
+        <div class="w-full flex items-center justify-between">
+          <div class="flex gap-2 items-center">
+            <img src="./public/images/Shape-2.png" alt="">
+            <h1 class="font-semibold text-lg">Ganttify</h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-7 w-7 border border-white/50 flex items-center justify-center rounded-md bg-black">
+              <i class="ri-twitter-x-line text-white/50"></i>
+            </div>
+            <div class="h-7 w-7 border border-white/50 flex items-center justify-center rounded-md bg-black">
+              <i class="ri-facebook-circle-fill text-white/50"></i>
+            </div>
+            <div class="h-7 w-7 border border-white/50 flex items-center justify-center rounded-md bg-black">
+              <i class="ri-instagram-fill text-white/50"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex items-start justify-between max-[480px]:w-[400px] max-[480px]:flex-wrap max-[480px]:gap-10">
+          <div class="flex flex-col items-start gap-6">
+            <h1 class="text-white/90">Ganttify</h1>
+            <div class="text-white/30 flex flex-col items-start gap-6 text-sm">
+              <a href="">Home</a>
+              <a href="">Product</a>
+              <a href="">Pricing</a>
+              <a href="">Customer Success</a>
+              <a href="">Templates</a>
+              <a href="">Trust & Security</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-6">
+            <h1 class="text-white/90">Solutions</h1>
+            <div class="text-white/30 flex flex-col items-start gap-6 text-sm">
+              <a href="">Project Management</a>
+              <a href="">Goal Management</a>
+              <a href="">Agile Management</a>
+              <a href="">Task Management</a>
+              <a href="">Productivity</a>
+              <a href="">Work Management</a>
+              <a href="">Project Planning</a>
+              <a href="">To Do Lists</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-6">
+            <h1 class="text-white/90">About Us</h1>
+            <div class="text-white/30 flex flex-col items-start gap-6 text-sm">
+              <a href="">Company</a>
+              <a href="">Leadership</a>
+              <a href="">Customers</a>
+              <a href="">Careers</a>
+              <a href="">Changelog</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-6">
+            <h1 class="text-white/90">Resources</h1>
+            <div class="text-white/30 flex flex-col items-start gap-6 text-sm">
+              <a href="">Help Center</a>
+              <a href="">FAQ</a>
+              <a href="">Developers & API</a>
+              <a href="">Community</a>
+              <a href="">Events</a>
+              <a href="">Status</a>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-6">
+            <h1 class="text-white/90">Helpful Links</h1>
+            <div class="text-white/30 flex flex-col items-start gap-3 text-sm">
+              <a href="">Legal center</a>
+              <a href="">Private policy</a>
+              <a href="">Pricing</a>
+              <a href="">Partnerships</a>
+            </div>
+          </div>
+          <div class="w-10"></div>
+        </div>
+        <hr class="w-full border-t border-solid border-white/10">
+        <div class="w-full flex items-center justify-between">
+          <div
+            class="w-max py-1 px-2 text-xs bg-grad goals-report flex items-center justify-center gap-[6px] border border-gray-500/30 rounded-md">
+            <img class="h-4" src="./public/images/united states.png" alt="">
+            <h4>United States</h4>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <h4 class="text-white/40 text-sm">&#169; Ganttify 2024, All Rights Reserved </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
